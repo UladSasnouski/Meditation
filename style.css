@@ -51,6 +51,8 @@ button:active {
 .time-control {
   padding: 20px 10px 250px 10px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   width: 100%;
   margin: 0;
@@ -177,7 +179,6 @@ button:active {
 .time-display {
   color: white;
   font-size: 50px;
-  padding-left: 80px;
 }
 
 video {
@@ -201,7 +202,22 @@ display: none;
 }
 .container {
   height: 100vh;
+  max-width: 250px;
 }
 .active {
   display: block;
+}
+
+@media (max-width: 245px){
+  .time-control-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .time-control-container button {
+    padding: 0;
+  }
+  #btnFullscreen {
+    padding: 0;
+  }
 }
